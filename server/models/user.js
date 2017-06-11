@@ -13,7 +13,7 @@ let User = mongoose.model('User', {
     email: '  Matteeh@yahoo.se   '
 });
 
-newUser.save().then((doc) => {
+user.save().then((doc) => {
     console.log('Saved User', doc);
 }, (e) => {
     console.log('Unable to save User');
